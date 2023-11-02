@@ -15,9 +15,9 @@ To use **Subtitle Repair**, follow these simple steps:
 
 2. **Open the Application**: Launch the application on your desktop.
 
-3. **Import Subtitles**: Select the ASCII-encoded subtitle file you want to convert by clicking the "Import" or "Open" button.
+3. **Drag and Drop Subtitles**: Drag and drop the ASCII-encoded subtitle file you want to convert onto the main screen of the app or onto the app icon (for example, on the desktop or elsewhere).
 
-4. **Convert to UTF-8**: Click the "Convert" button to start the conversion process. The application will automatically replace ASCII characters with their UTF-8 counterparts.
+4. **Convert to UTF-8**: The application will automatically begin the conversion process, replacing ASCII characters with their UTF-8 counterparts.
 
 5. **Save Converted Subtitles**: Once the conversion is complete, save the converted subtitle file to your desired location.
 
@@ -46,7 +46,7 @@ If you encounter any issues or have questions about **Subtitle Repair**, please 
 
 ## About
 
-**Subtitle Repair** is developed by [Andrei Ivan]. We are dedicated to providing valuable tools for working with subtitles, and this application is part of our commitment to improving the quality of subtitle files, particularly for the Romanian language.
+**Subtitle Repair** is developed by Andrei Ivan. We are dedicated to providing valuable tools for working with subtitles, and this application is part of our commitment to improving the quality of subtitle files, particularly for the Romanian language.
 
 Visit my website at [https://andreiivan.com](https://andreiivan.com) for more information about our products and services.
 
