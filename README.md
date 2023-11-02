@@ -15,11 +15,9 @@ To use **Subtitle Repair**, follow these simple steps:
 
 2. **Open the Application**: Launch the application on your desktop.
 
-3. **Drag and Drop Subtitles**: Drag and drop the ASCII-encoded subtitle file you want to convert onto the main screen of the app or onto the app icon (for example, on the desktop or elsewhere).
+3. **Drag and Drop Subtitles**: Simply drag and drop the ASCII-encoded subtitle file you want to convert onto the main screen of the app or onto the app icon (for example, on the desktop or elsewhere). The application will automatically begin the conversion process, replacing ASCII characters with their UTF-8 counterparts.
 
-4. **Convert to UTF-8**: The application will automatically begin the conversion process, replacing ASCII characters with their UTF-8 counterparts.
-
-5. **Save Converted Subtitles**: Once the conversion is complete, save the converted subtitle file to your desired location.
+4. **Save Converted Subtitles**: Once the conversion is complete, the converted subtitle file is automatically saved to your desired location.
 
 ## System Requirements
 
@@ -34,7 +32,7 @@ To use **Subtitle Repair**, follow these simple steps:
 
 ## Contribution
 
-We welcome contributions and bug reports. If you'd like to contribute to the development of **Subtitle Repair**, please follow these guidelines:
+I welcome contributions and bug reports. If you'd like to contribute to the development of **Subtitle Repair**, please follow these guidelines:
 
 1. Fork the repository on GitHub.
 2. Create a new branch and make your changes.
@@ -46,10 +44,10 @@ If you encounter any issues or have questions about **Subtitle Repair**, please 
 
 ## About
 
-**Subtitle Repair** is developed by Andrei Ivan. We are dedicated to providing valuable tools for working with subtitles, and this application is part of our commitment to improving the quality of subtitle files, particularly for the Romanian language.
+**Subtitle Repair** is developed by Andrei Ivan. I am dedicated to providing valuable tools for working with subtitles, and this application is part of my commitment to improving the quality of subtitle files, particularly for the Romanian language.
 
-Visit my website at [https://andreiivan.com](https://andreiivan.com) for more information about our products and services.
+Visit my website at [https://andreiivan.com](https://andreiivan.com) for more information about my products and services.
 
 ---
 
-Enjoy using **Subtitle Repair** to effortlessly convert ASCII-encoded subtitles to UTF-8 and enhance your experience working with Romanian subtitles. Your feedback and contributions are highly appreciated as we continue to improve this application.
+Enjoy using **Subtitle Repair** to effortlessly convert ASCII-encoded subtitles to UTF-8 and enhance your experience working with Romanian subtitles. Your feedback and contributions are highly appreciated as I continue to improve this application.
