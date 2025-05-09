@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Threading.Tasks;
 using Microsoft.Win32;
+using System.IO;
 
 namespace SubtitleRepair
 {
@@ -65,6 +66,46 @@ namespace SubtitleRepair
                 Registry.CurrentUser.CreateSubKey("Software\\Abso Tech\\Subtitle Repair").SetValue("AllMessages", 1);
             else
                 Registry.CurrentUser.CreateSubKey("Software\\Abso Tech\\Subtitle Repair").SetValue("AllMessages", 0);
+        }
+
+        private void panel1_DragDrop(object sender, DragEventArgs e)
+        {
+            dynamic a = e.Data.GetData(DataFormats.FileDrop);
+            foreach (string filename in a)
+            {
+                if (ExtensionCheck.CheckExtension(filename))
+                {
+                    Vars.FileCounter++;
+                    try
+                    {
+                        Vars.FileCounterOK++;
+                        File.SetAttributes(filename, FileAttributes.Normal);
+                        string text = File.ReadAllText(filename, Encoding.Default);
+                        text = text.Replace("þ", "ț");
+                        text = text.Replace("ã", "ă");
+                        text = text.Replace("º", "ș");
+                        text = text.Replace("ª", "Ș");
+                        text = text.Replace("Þ", "Ț");
+                        File.WriteAllText(filename, text, Encoding.UTF8);
+                        Console.WriteLine("Letters successfully replaced in " + filename + "!");
+                        if (Vars.AllMessages == true)
+                            MessageBox.Show("Letters successfully replaced in " + filename + "!", "Completed!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Error replacing letters in  " + filename + "!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Extension not supported (only plain text files are supported).\nFile:  " + filename + "  .", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void panel1_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
         }
     }
 }

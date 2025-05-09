@@ -19,29 +19,13 @@ namespace SubtitleRepair
     }
     public class Program
     {
-        
+        [STAThread]
         static void Main(string[] args)
         {
-            if (Registry.CurrentUser.CreateSubKey("Software\\Abso Tech\\Subtitle Repair").GetValue("AllMessages") == null)
-            {
-                Registry.CurrentUser.CreateSubKey("Software\\Abso Tech\\Subtitle Repair").SetValue("AllMessages", 0);
-            }
+           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             
-           
-            Vars.Error = AbsoDep.SelfVerify();
-            if (Vars.Error != null)
-            {
-                MessageBox.Show(Vars.Error, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Environment.Exit(50);
-            }
-
-            if (AbsoDep.CheckDuplicateProcess() == true)
-            {
-                MessageBox.Show("Another instance of the application is running!\n" , "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Environment.Exit(1);
-            }
             if (args.Length == 0)
             {
                 Console.WriteLine("Please add at least one file!\nUsage: \"-file1 , -file2\"");
