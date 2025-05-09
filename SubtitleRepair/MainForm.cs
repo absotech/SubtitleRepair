@@ -88,8 +88,7 @@ namespace SubtitleRepair
                         text = text.Replace("Þ", "Ț");
                         File.WriteAllText(filename, text, Encoding.UTF8);
                         Console.WriteLine("Letters successfully replaced in " + filename + "!");
-                        if (Vars.AllMessages == true)
-                            MessageBox.Show("Letters successfully replaced in " + filename + "!", "Completed!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Letters successfully replaced in " + filename + "!", "Completed!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch
                     {
